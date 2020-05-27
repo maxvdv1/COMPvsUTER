@@ -5,16 +5,12 @@ using UnityEngine.UI;
 public class p1levens : MonoBehaviour
 {
 
-    public GameObject levens;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public GameObject levens;
+   
 
-    // Update is called once per frame
+   
     void Update()
-    {
-        levens.GetComponent<Text>().text = movementplayer1.livesp1string;
-    }
+        {
+            levens.GetComponent<Text>().text = movementplayer1.livesp1string;
+        }
 }
