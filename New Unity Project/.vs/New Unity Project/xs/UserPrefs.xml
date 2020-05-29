@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/randommovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/followPlayer.cs">
     <Files>
-      <File FileName="Assets/scripts/randommovement.cs" Line="58" Column="43" />
+      <File FileName="Assets/scripts/randommovement.cs" Line="32" Column="9" />
       <File FileName="Assets/movementplayer1.cs" />
-      <File FileName="Assets/shootbullet.cs" />
-      <File FileName="Assets/camerap2.cs" />
-      <File FileName="Assets/camerap1.cs" />
-      <File FileName="Assets/p1levens.cs" />
+      <File FileName="Assets/shootbullet.cs" Line="33" Column="2" />
+      <File FileName="Assets/camerap2.cs" Line="18" Column="8" />
+      <File FileName="Assets/camerap1.cs" Line="19" Column="8" />
+      <File FileName="Assets/p1levens.cs" Line="15" Column="10" />
       <File FileName="Assets/p2lives.cs" />
-      <File FileName="Assets/collis.cs" />
+      <File FileName="Assets/collis.cs" Line="22" Column="1" />
+      <File FileName="Assets/followPlayer.cs" Line="7" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bb0a8279-5b94-47b2-b34c-2feb325aa308" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4bef1579-b7db-4eae-8d03-7e9a64133bfd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
