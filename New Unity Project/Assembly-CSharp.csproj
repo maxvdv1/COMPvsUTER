@@ -63,18 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Arrow.cs" />
     <Compile Include="Assets\followPlayer.cs" />
-    <Compile Include="Assets\scripts\bowp2.cs" />
     <Compile Include="Assets\scripts\camerap1.cs" />
     <Compile Include="Assets\scripts\camerap2.cs" />
     <Compile Include="Assets\scripts\collis.cs" />
-    <Compile Include="Assets\scripts\goarrow.cs" />
     <Compile Include="Assets\scripts\movementplayer1.cs" />
     <Compile Include="Assets\scripts\p1levens.cs" />
     <Compile Include="Assets\scripts\p2lives.cs" />
     <Compile Include="Assets\scripts\randommovement.cs" />
-    <Compile Include="Assets\scripts\shootbullet.cs" />
-    <Compile Include="Assets\scripts\ShootingPrefab.cs" />
+    <Compile Include="Assets\scripts\Shoot.cs" />
     <None Include="Assets\sprites\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/maxvandervlugt/Desktop/app/HT/unity/COMPvsUTER/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

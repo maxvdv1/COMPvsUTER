@@ -293,14 +293,11 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 "Assets/followPlayer.cs"
-"Assets/scripts/bowp2.cs"
 "Assets/scripts/camerap1.cs"
 "Assets/scripts/camerap2.cs"
 "Assets/scripts/collis.cs"
-"Assets/scripts/goarrow.cs"
 "Assets/scripts/movementplayer1.cs"
 "Assets/scripts/p1levens.cs"
 "Assets/scripts/p2lives.cs"
 "Assets/scripts/randommovement.cs"
-"Assets/scripts/shootbullet.cs"
-"Assets/scripts/ShootingPrefab.cs"
+"Assets/scripts/Shoot.cs"

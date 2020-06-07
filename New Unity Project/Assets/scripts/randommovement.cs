@@ -33,7 +33,7 @@ public class randommovement : MonoBehaviour
     }
 
 
-    
+
 
     void Update()
     {
@@ -42,40 +42,41 @@ public class randommovement : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, places[randomPlace].position, movespeed * Time.deltaTime);
 
 
-          if (Vector3.Distance(transform.position, places[randomPlace].position) < 20f)
-                {
-                     randomPlace = Random.Range(0, places.Length);
-                }
-
-       
+        if (Vector3.Distance(transform.position, places[randomPlace].position) < 20f)
+        {
+            randomPlace = Random.Range(0, places.Length);
+        }
 
 
-          if (distanceToEnemy <= range)
-                {
-
-                    Debug.Log("enemy spotted");
-
-                 if (timeBtwShots <= 0)
-                    {
-                         timeBtwShots = Random.Range(1f, 2f);
-
-                         Instantiate(arrow, transform.position, Quaternion.identity);
-                         Rigidbody rigidArrow = arrow.GetComponent<Rigidbody>();
-                         rigidArrow.AddForce(Vector3.forward);
-                     }
-
-             else { timeBtwShots -= Time.deltaTime;  }
-
-            
-                 }
-
-    }
 
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);
+        if (distanceToEnemy <= range)
+        {
+
+            Debug.Log("enemy spotted");
+
+            //if (timeBtwShots <= 0)
+            //   {
+            //        timeBtwShots = Random.Range(1f, 2f);
+
+            //        Instantiate(arrow, transform.position, Quaternion.identity);
+            //        Rigidbody rigidArrow = arrow.GetComponent<Rigidbody>();
+            //        rigidArrow.AddForce(Vector3.forward);
+            //    }
+
+            //else { timeBtwShots -= Time.deltaTime;  }
+
+
+            //    }
+
+        }
+
+
+        //void OnDrawGizmosSelected()
+        //{
+        //    Gizmos.color = Color.red;
+        //    Gizmos.DrawWireSphere(transform.position, range);
+        //}
     }
 }
 
