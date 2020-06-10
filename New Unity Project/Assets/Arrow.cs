@@ -11,23 +11,24 @@ public class Arrow : MonoBehaviour
     private float timer;
     private bool hit = false;
 
-            private void Start()
-            {
-                arrowBody = GetComponent<Rigidbody>();
-                transform.rotation = Quaternion.LookRotation(arrowBody.velocity);
-            }
 
-           
-            void Update()
-            {
-                if (!hit)
-                {
-                    transform.rotation = Quaternion.LookRotation(arrowBody.velocity);
-                }
-            }
+    private void Start()
+    {
+        arrowBody = GetComponent<Rigidbody>();
+        transform.rotation = Quaternion.LookRotation(arrowBody.velocity);
+    }
 
-            private void OnCollisionEnter(Collision collision)
-            {
-                hit = true;
-            }
+
+    void Update()
+    {
+        if (!hit)
+        {
+            transform.rotation = Quaternion.LookRotation(arrowBody.velocity);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        hit = true;
+    }
 }
