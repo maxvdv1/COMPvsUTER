@@ -1487,7 +1487,7 @@ MonoBehaviour:
   cam: {fileID: 1480399392}
   arrowPf: {fileID: 2074877455}
   arrowSpawn: {fileID: 565594519}
-  shootForce: 20
+  shootForce: 4.98
 --- !u!1 &908932939
 GameObject:
   m_ObjectHideFlags: 0
