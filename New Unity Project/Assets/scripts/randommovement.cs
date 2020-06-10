@@ -22,7 +22,8 @@ public class randommovement : MonoBehaviour
     public float range = 100f;
     private Transform player1;
     public Transform xcam;
-  
+    public float followingp1speed = 20;
+    public Transform FollowPos = null;
 
 
     void Start()
@@ -71,6 +72,7 @@ public class randommovement : MonoBehaviour
 
         }
 
+        this.transform.LookAt(FollowPos);
 
         //void OnDrawGizmosSelected()
         //{
@@ -78,5 +80,7 @@ public class randommovement : MonoBehaviour
         //    Gizmos.DrawWireSphere(transform.position, range);
         //}
     }
+
+
 }
 
