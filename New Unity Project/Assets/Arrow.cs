@@ -30,5 +30,11 @@ public class Arrow : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         hit = true;
+
+        if(collision.gameObject.tag == "player1")
+        {
+            movementplayer1.livesp1 -= 5;
+        }
+       
     }
 }

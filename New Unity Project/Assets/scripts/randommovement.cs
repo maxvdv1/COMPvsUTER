@@ -13,8 +13,7 @@ public class randommovement : MonoBehaviour
     public GameObject arrow;
     public static string livesp2;
     
-    private float timeBtwShots;
-    public float startTimeBtwShots;
+   
     public Camera p1;
    
     public GameObject target;
@@ -29,8 +28,7 @@ public class randommovement : MonoBehaviour
     void Start()
         {
             randomPlace = Random.Range(0, places.Length);
-            timeBtwShots = Random.Range(1f, 2f);
-        
+     
         }
 
 
@@ -38,30 +36,30 @@ public class randommovement : MonoBehaviour
 
     void Update()
         {
-            float distanceToEnemy = Vector3.Distance(transform.position, target.transform.position); //kan ook target
-            livesp2 = lives.ToString();
+            float distanceToEnemy = Vector3.Distance(transform.position, target.transform.position); //position compared to enemy
+            livesp2 = lives.ToString(); 
             transform.position = Vector3.MoveTowards(transform.position, places[randomPlace].position, movespeed * Time.deltaTime);
 
 
-                if (Vector3.Distance(transform.position, places[randomPlace].position) < 20f)
+                if (Vector3.Distance(transform.position, places[randomPlace].position) < 20f) 
                 {
-                    randomPlace = Random.Range(0, places.Length);
+                    randomPlace = Random.Range(0, places.Length);//go to other  position
                 }
 
 
 
-                if (distanceToEnemy <= range)
-                {
+                //if (distanceToEnemy <= range)
+                //{
 
-                    Debug.Log("enemy spotted");
+                //    Debug.Log("enemy spotted");
 
-                    this.transform.LookAt(FollowPos); //aim on player
+                   
 
-                }
+                //}
 
 
-
-        }
+        this.transform.LookAt(FollowPos); //aim on player
+         }
 
 
 }

@@ -10,15 +10,29 @@ public class Shoot : MonoBehaviour
     public Transform arrowSpawn;
     public float shootForce = 20f;
 
+    private float timeBtwShots;
+    public float startTimeBtwShots;
 
-   
-        void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
+
+        private void Start()
             {
-                 GameObject go = Instantiate(arrowPf, arrowSpawn.position, Quaternion.identity);
-                 Rigidbody rb = go.GetComponent<Rigidbody>();
-                 rb.velocity = cam.transform.forward * shootForce;
+                //timeBtwShots = Random.Range(1f, 2f);
+        timeBtwShots = startTimeBtwShots;
             }
-        }
+
+        void Update()
+            {
+                if (timeBtwShots <= 0)
+                {
+                     GameObject go = Instantiate(arrowPf, arrowSpawn.position, Quaternion.identity);
+                     Rigidbody rb = go.GetComponent<Rigidbody>();
+                     rb.velocity = cam.transform.forward * shootForce;
+                    timeBtwShots = startTimeBtwShots;
+                    
+                 }
+                else
+                {
+                    timeBtwShots -= Time.deltaTime;
+                }
+            }
  }

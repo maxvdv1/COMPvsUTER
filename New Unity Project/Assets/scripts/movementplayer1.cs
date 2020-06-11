@@ -16,6 +16,8 @@ public class movementplayer1 : MonoBehaviour
     private int randomPlace;
     private Transform player1;
 
+    public GameObject panelp2wins;
+
    
         void Start()
         {
@@ -52,10 +54,16 @@ public class movementplayer1 : MonoBehaviour
                          }
 
 
-                      } 
+                      }
 
-     
+        if (livesp1 < 5)
+        {
+            panelp2wins.SetActive(true);
+            Time.timeScale = 0;
         }
+
+
+    }
 
     
 }
